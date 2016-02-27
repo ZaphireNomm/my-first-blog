@@ -3,6 +3,23 @@
 		<title>Zaph's blog</title>
 	</head>
 	<body>
+
+		<div>
+			<h1><a href="/">Django Girls Blog</a></h1>
+		</div>
+
+		{% for post in posts%}
+			<div>
+				<p>published: {{ post.published_date}}</p>
+				<h1><a herf="">{{ post.title }}</a></h1>
+				<p>{{ post.text|linebreaks }}</p>
+			</div>
+		{%endfor%}
+		
+		
+
+
+
 		<div>
 			<strong><em><h1>Web experience</h1></em></strong>
 			<em><h2>Coding... for 3 months</h2></em>
